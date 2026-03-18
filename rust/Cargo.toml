@@ -647,6 +647,7 @@ snmalloc-rs = { version = "0.3.8", features = ["build_cc"] }
 
 # K/V database
 rocksdb = { version = "0.24.0", default-features = false }
+aws-lc-sys = { version = "0.38.0" }
 
 [patch.crates-io]
 # Duplicated by: reth-payload-primitives, reth-engine-local (reth git), rollup-boost,
