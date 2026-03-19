@@ -475,6 +475,7 @@ jsonrpsee-http-client = "0.26.0"
 jsonrpsee-types = "0.26.0"
 
 # ==================== CRYPTO ====================
+aws-lc-rs = "1.16.1"
 c-kzg = { version = "2.1.5", default-features = false }
 enr = { version = "0.13", default-features = false }
 k256 = { version = "0.13", default-features = false, features = ["ecdsa"] }
@@ -647,7 +648,6 @@ snmalloc-rs = { version = "0.3.8", features = ["build_cc"] }
 
 # K/V database
 rocksdb = { version = "0.24.0", default-features = false }
-aws-lc-sys = { version = "0.38.0" }
 
 [patch.crates-io]
 # Duplicated by: reth-payload-primitives, reth-engine-local (reth git), rollup-boost,
