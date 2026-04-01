@@ -10,6 +10,7 @@ exclude.workspace = true
 
 [dependencies]
 aws-lc-rs.workspace = true
+aws-lc-sys.workspace = true
 reth-cli-util.workspace = true
 reth-optimism-cli.workspace = true
 reth-optimism-rpc.workspace = true
