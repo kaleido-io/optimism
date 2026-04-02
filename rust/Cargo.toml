@@ -475,7 +475,7 @@ jsonrpsee-http-client = "0.26.0"
 jsonrpsee-types = "0.26.0"
 
 # ==================== CRYPTO ====================
-aws-lc-rs = "1.16.1"
+aws-lc-rs = "1.16.2"
 aws-lc-sys = "0.39.0"
 c-kzg = { version = "2.1.5", default-features = false }
 enr = { version = "0.13", default-features = false }
