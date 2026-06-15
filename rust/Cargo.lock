@@ -2330,13 +2330,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "chacha20"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6f8d983286843e49675a4b7a2d174efe136dc93a18d69130dd18198a6c167601"
+dependencies = [
+ "cfg-if",
+ "cpufeatures 0.3.0",
+ "rand_core 0.10.1",
+]
+
+[[package]]
 name = "chacha20poly1305"
 version = "0.10.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "10cd79432192d1c0f4e1a0fef9527696cc039165d729fb41b3f4f4f354c2dc35"
 dependencies = [
  "aead",
- "chacha20",
+ "chacha20 0.9.1",
  "cipher",
  "poly1305",
  "zeroize",
@@ -3051,7 +3062,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ab67060fc6b8ef687992d439ca0fa36e7ed17e9a0b16b25b601e8757df720de"
 dependencies = [
  "data-encoding",
- "syn 1.0.109",
+ "syn 2.0.117",
 ]
 
 [[package]]
@@ -4212,6 +4223,7 @@ dependencies = [
  "cfg-if",
  "libc",
  "r-efi 6.0.0",
+ "rand_core 0.10.1",
  "wasip2",
  "wasip3",
 ]
@@ -5656,7 +5668,7 @@ dependencies = [
  "kona-peers",
  "libp2p",
  "metrics",
- "rand 0.9.4",
+ "rand 0.10.1",
  "serde_json",
  "tempfile",
  "thiserror 2.0.18",
@@ -5713,7 +5725,7 @@ dependencies = [
  "op-alloy-provider",
  "op-alloy-rpc-types",
  "op-alloy-rpc-types-engine",
- "rand 0.9.4",
+ "rand 0.10.1",
  "rstest",
  "serde",
  "serde_json",
@@ -5748,7 +5760,7 @@ dependencies = [
  "op-alloy-consensus",
  "op-alloy-rpc-types-engine",
  "op-revm",
- "rand 0.9.4",
+ "rand 0.10.1",
  "revm",
  "rocksdb",
  "rstest",
@@ -5775,7 +5787,7 @@ dependencies = [
  "arbitrary",
  "derive_more",
  "op-revm",
- "rand 0.9.4",
+ "rand 0.10.1",
  "serde",
  "serde_json",
  "serde_repr",
@@ -5812,7 +5824,7 @@ dependencies = [
  "op-alloy-consensus",
  "op-alloy-rpc-types-engine",
  "openssl",
- "rand 0.9.4",
+ "rand 0.10.1",
  "serde",
  "serde_json",
  "serde_repr",
@@ -5907,7 +5919,7 @@ dependencies = [
  "kona-protocol",
  "kona-registry",
  "op-alloy-consensus",
- "rand 0.9.4",
+ "rand 0.10.1",
  "serde",
  "serde_json",
  "thiserror 2.0.18",
@@ -5933,7 +5945,7 @@ dependencies = [
  "codspeed-criterion-compat",
  "op-alloy-rpc-types-engine",
  "proptest",
- "rand 0.9.4",
+ "rand 0.10.1",
  "reqwest 0.13.2",
  "serde",
  "thiserror 2.0.18",
@@ -6043,7 +6055,7 @@ dependencies = [
  "op-alloy-network",
  "op-alloy-provider",
  "op-alloy-rpc-types-engine",
- "rand 0.9.4",
+ "rand 0.10.1",
  "rstest",
  "strum",
  "thiserror 2.0.18",
@@ -6127,7 +6139,7 @@ dependencies = [
  "op-alloy-consensus",
  "op-alloy-rpc-types-engine",
  "op-revm",
- "rand 0.9.4",
+ "rand 0.10.1",
  "rayon",
  "rstest",
  "serde",
@@ -6162,7 +6174,7 @@ dependencies = [
  "op-alloy-consensus",
  "op-alloy-rpc-types-engine",
  "op-revm",
- "rand 0.9.4",
+ "rand 0.10.1",
  "revm",
  "serde",
  "serde_json",
@@ -6198,7 +6210,7 @@ dependencies = [
  "op-alloy-rpc-types",
  "op-alloy-rpc-types-engine",
  "proptest",
- "rand 0.9.4",
+ "rand 0.10.1",
  "rstest",
  "serde",
  "serde_json",
@@ -7722,7 +7734,7 @@ dependencies = [
  "bytes",
  "derive_more",
  "modular-bitfield",
- "rand 0.9.4",
+ "rand 0.10.1",
  "reth-codecs",
  "reth-codecs-derive",
  "reth-zstd-compressors",
@@ -7787,7 +7799,7 @@ dependencies = [
  "derive_more",
  "jsonrpsee",
  "op-alloy-consensus",
- "rand 0.9.4",
+ "rand 0.10.1",
  "reth-rpc-traits",
  "serde",
  "serde_json",
@@ -8789,6 +8801,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "rand"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d2e8e8bcc7961af1fdac401278c6a831614941f6164ee3bf4ce61b7edb162207"
+dependencies = [
+ "chacha20 0.10.0",
+ "getrandom 0.4.2",
+ "rand_core 0.10.1",
+ "serde",
+]
+
+[[package]]
 name = "rand_chacha"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -8826,6 +8850,12 @@ dependencies = [
  "getrandom 0.3.4",
  "serde",
 ]
+
+[[package]]
+name = "rand_core"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69"
 
 [[package]]
 name = "rand_xorshift"
@@ -11296,8 +11326,8 @@ dependencies = [
  "op-alloy-consensus",
  "proptest",
  "proptest-arbitrary-interop",
+ "rand 0.10.1",
  "rand 0.8.6",
- "rand 0.9.4",
  "reth-codecs",
  "reth-primitives-traits",
  "reth-zstd-compressors",
@@ -14007,7 +14037,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
 dependencies = [
  "fastrand",
- "getrandom 0.3.4",
+ "getrandom 0.4.2",
  "once_cell",
  "rustix",
  "windows-sys 0.61.2",

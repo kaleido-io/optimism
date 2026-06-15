@@ -629,7 +629,7 @@ parking_lot = "0.12.5"
 paste = "1.0"
 proc-macro2 = "1.0"
 quote = "1.0"
-rand = { version = "0.9.2", default-features = false }
+rand = { version = "0.10.0", default-features = false }
 rand_08 = { package = "rand", version = "0.8" }
 ratatui = "0.30.0"
 rayon = "1.11.0"
