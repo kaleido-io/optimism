@@ -2,7 +2,7 @@ module keccak
 
 go 1.25
 
-toolchain go1.25.4
+toolchain go1.25.11
 
 require golang.org/x/crypto v0.35.0
 
