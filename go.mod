@@ -40,7 +40,7 @@ require (
 	github.com/libp2p/go-libp2p-pubsub v0.12.0
 	github.com/libp2p/go-libp2p-testing v0.12.0
 	github.com/lmittmann/w3 v0.20.7
-	github.com/mattn/go-isatty v0.0.20
+	github.com/mattn/go-isatty v0.0.22
 	github.com/minio/minio-go/v7 v7.0.85
 	github.com/minio/sha256-simd v1.0.1
 	github.com/multiformats/go-base32 v0.1.0
@@ -165,7 +165,7 @@ require (
 	github.com/influxdata/influxdb1-client v0.0.0-20220302092344-a9ab5670611c // indirect
 	github.com/influxdata/line-protocol v0.0.0-20210311194329-9aa0e372d097 // indirect
 	github.com/ipfs/go-cid v0.4.1 // indirect
-	github.com/ipfs/go-log/v2 v2.5.1 // indirect
+	github.com/ipfs/go-log/v2 v2.9.2 // indirect
 	github.com/jackpal/go-nat-pmp v1.0.2 // indirect
 	github.com/jbenet/go-temp-err-catcher v0.1.0 // indirect
 	github.com/jbenet/goprocess v0.1.4 // indirect
@@ -266,7 +266,7 @@ require (
 	go.uber.org/fx v1.22.2 // indirect
 	go.uber.org/mock v0.4.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	go.uber.org/zap v1.27.0 // indirect
+	go.uber.org/zap v1.28.0 // indirect
 	golang.org/x/image v0.39.0 // indirect
 	golang.org/x/net v0.53.0 // indirect
 	golang.org/x/sys v0.43.0 // indirect
