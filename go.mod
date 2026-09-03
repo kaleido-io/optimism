@@ -1,6 +1,6 @@
 module github.com/ethereum-optimism/optimism
 
-go 1.25.0
+go 1.26.0
 
 require (
 	github.com/BurntSushi/toml v1.5.0
@@ -57,7 +57,7 @@ require (
 	go.etcd.io/bbolt v1.3.6
 	go.opentelemetry.io/otel v1.44.0
 	go.opentelemetry.io/otel/trace v1.44.0
-	golang.org/x/crypto v0.55.0
+	golang.org/x/crypto v0.56.0
 	golang.org/x/mod v0.40.0
 	golang.org/x/sync v0.22.0
 	golang.org/x/term v0.45.0
